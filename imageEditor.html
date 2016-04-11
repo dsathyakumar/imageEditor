@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Rubber bands with layered elements</title>
+      <style>
+         body {
+           background: FFFFFF;
+         }
+         #canvas {
+           /*margin-left: 20px;*/
+           margin-right: 0;
+           /*margin-bottom: 20px;*/
+           border: thin solid #aaaaaa;
+           cursor: crosshair;
+           padding: 0;
+           /*position: absolute;*/
+         }
+         #controls {
+           margin: 20px 0px 20px 20px;
+         }
+         #rubberbandDiv {
+           position: absolute;
+           border: 3px dotted #FFF;
+           cursor: crosshair;
+           display: none;
+
+           /*z-index: 9999;*/
+         }
+         /*#canvas-container {
+           position: relative;
+         }*/
+      </style>
+   </head>
+   <body id="body_1">
+      <div id='controls'>
+         <input type='button' id='resetButton' value='Reset'/>
+         <button type="button" id="ib" data-step="10" data-currentvalue="0" data-max="50">Increase Brightness</button>
+         <button type="button" id="db" data-step="-10" data-currentvalue="0" data-min="-50">Reduce Brightness</button>
+         <button type="button" id="rl" data-step="-30" data-currentvalue="0">Rotate Left</button>
+         <button type="button" id="rr" data-step="30" data-currentvalue="0">Rotate Right</button>
+         <button type="button" id="ic" data-step="10" data-currentvalue="0" data-max="50">Increase Contrast</button>
+         <button type="button" id="dc" data-step="-10" data-currentvalue="0" data-min="-50">Reduce Contrast</button>
+         <button type="button" id="crop">Crop</button>
+         <button type="button" id="zi" data-currentvalue="0" data-step="1.6" data-max="3.7">Zoom In</button>
+         <button type="button" id="zo" data-currentvalue="0" data-step="0.625" data-min="-2.4">Zoom Out</button>
+         <button type="button" id="undo">Undo Previous</button>
+      </div>
+      <div id="canvas-container">
+        <div id='rubberbandDiv'></div>
+        <canvas id='canvas' width='800' height='520'>
+         Canvas not supported
+        </canvas>
+      </div>
+      <script type="text/javascript" src="assets/js/full.js"></script>
+   </body>
+</html>

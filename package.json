@@ -1,0 +1,14 @@
+{
+  "name": "imageEditor",
+  "version": "1.0.0",
+  "description": "a simple image editor with canvas HTML5",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "dsathyakumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
