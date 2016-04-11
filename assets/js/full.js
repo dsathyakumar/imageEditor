@@ -72,7 +72,7 @@ function zoomMinus(){
   }
 }
 
-function zoomonscroll(e){
+/*function zoomonscroll(e){
   e.preventDefault();
   var scale = 1;
   var zoomIntensity = 0.2;
@@ -94,7 +94,7 @@ function zoomonscroll(e){
   context.translate(-originx, -originy);
 
   scale *= zoom;
-}
+}*/
 
 //> function that deals with incrasing contrast
 function contrastUp(){
@@ -392,7 +392,7 @@ zoomin.addEventListener('click', zoomPlus);
 
 zoomout.addEventListener('click', zoomMinus);
 
-canvas.addEventListener('mousewheel', zoomonscroll);
+//canvas.addEventListener('mousewheel', zoomonscroll);
 
 //> what is to be done when mousedown occurs on canvas
 canvas.onmousedown = function (e) {
